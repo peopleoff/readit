@@ -144,3 +144,5 @@ fabric.properties
 .idea/
 package.json
 auth.json
+
+/dist
