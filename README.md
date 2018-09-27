@@ -2,6 +2,8 @@
 
 A simple discord bot that will allow you to share random posts from different subreddits into your channel.
 
+![](https://media.giphy.com/media/mMDEMpBeJuPWIARgTu/giphy.gif)
+
 You can choose to host your own bot or invite mine to your server using the link below
 
 https://discordapp.com/oauth2/authorize?client_id=434377592888623104&scope=bot
