@@ -143,5 +143,4 @@ fabric.properties
 
 .idea/
 /dist
-backup.json
-auth.json
+*.json
