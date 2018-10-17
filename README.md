@@ -17,7 +17,7 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-1. Follow the insturctions below to create a discord bot and generate an auth token
+1. Follow the instructions below to create a discord bot and generate an auth token
 https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token
 
 2. Place the auth token into auth.json
@@ -33,13 +33,26 @@ npm install
 node readit.js
 ```
 
+### Commands
 
-You should see Logged in as <Bot-User> when it is ready.
+readit.js listens for any post with starting with an exclamation point  {!}. By default it will search that subreddits hot posts and return a random URL back to the channel. You can pass it additional search criteria by following your subreddit with a -- command to search top posts.
+
+
+```
+Examples
+!Gaming //Returns random image from the hot section of /r/Gaming
+!Gaming --hour //Returns random image from top section of /r/Gaming within the last hour.
+//Additional Parameters
+--day
+--month
+--year
+--all
+```
 
 ## Built With
 
-* [Discord](https://discord.js.org/#/) - The framework used to create the bot
-* [Reddit](https://www.reddit.com/dev/api/) - Reddit's api to pull images
+* [Discord.js](https://discord.js.org/#/) - The framework used to create the bot
+* [Reddit API](https://www.reddit.com/dev/api/) - Reddit's api to pull images
 
 ## License
 

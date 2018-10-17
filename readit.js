@@ -11,7 +11,12 @@ client.on('message', msg => {
     if (msg.content.substring(0, 1) === '!') {
         // replace all "!"
         let subreddit = msg.content.replace(/!/g, " ").trim().toLocaleLowerCase().split(' ')[0];
-        let url = `https://www.reddit.com/r/${subreddit}/.json`;
+        let url = ""
+        if(msg.content.includes("--")){
+            url = `https://www.reddit.com/r/${subreddit}/top/.json?t=${msg.content.split("--")[1]}`;
+        }else{
+            url = `https://www.reddit.com/r/${subreddit}/.json`;
+        }
         axios
             .get(url)
             .then(response => {
@@ -33,11 +38,7 @@ client.on('message', msg => {
                 }
             })
             .catch(error => {
-                if (error.response.status === 404) {
-                    msg.channel.send("404");
-                } else {
-                    msg.channel.send(`error: ${error.response.error}, message: ${error.response.message}, reason: ${error.response.reason}`);
-                }
+                msg.channel.send(`Error:  ${error}`);
             });
     }
 });
