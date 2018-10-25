@@ -20,20 +20,23 @@ client.on('message', msg => {
         axios
             .get(url)
             .then(response => {
-                let res = response.data.data;
-                if (res.children.length === 0) {
+                if (response.data.data.children.length === 0) {
                     msg.channel.send("Not a subreddit");
                 } else {
                     let dataset = response.data.data.children;
-                    let randomIndex = Math.floor(Math.random() * dataset.length) + 1;
+                    let randomIndex = Math.floor(Math.random() * dataset.length);
                     let post = dataset[randomIndex].data;
                     let image = post.url;
+                    let title = post.title;
                     let subredditID = post.subreddit_id;
+                    //Set message body as variable so we can later append to as we add more options.
+                    let messageBody;
+                    messageBody = `${title}\n${image}`;
 
                     if (subredditID === undefined) {
                         msg.channel.send("Not a subreddit");
                     } else {
-                        msg.channel.send(image);
+                        msg.channel.send(messageBody);
                     }
                 }
             })
