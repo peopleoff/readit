@@ -50,4 +50,4 @@ client.on('message', msg => {
 client.login(auth.token);
 
 //Implemented new feature
-//Added comment
+//Added Comment
