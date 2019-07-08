@@ -1,10 +1,10 @@
 # Readit.js
 
 [![CircleCI](https://img.shields.io/circleci/project/github/ntkme/github-buttons/master.svg)](https://circleci.com/gh/ntkme/github-buttons)
-[![Codecov](https://img.shields.io/codecov/c/github/ntkme/github-buttons.svg)](https://codecov.io/gh/ntkme/github-buttons)
+[![Known Vulnerabilities](https://snyk.io//test/github/peopleoff/readit/badge.svg?targetFile=package.json)](https://snyk.io//test/github/peopleoff/readit?targetFile=package.json)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=XRWZAR4QJHP4C&currency_code=USD&source=url)
 
-A simple discord bot that will allow you to share random posts from different subreddits into your channel.
+A Discord bot that will bring reddit into your channel! Let your users share random posts from their favorite subreddits directly into your channel! 
 
 ![](https://media.giphy.com/media/mMDEMpBeJuPWIARgTu/giphy.gif)
 
