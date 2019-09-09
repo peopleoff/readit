@@ -118,4 +118,4 @@ client.on("message", msg => {
     });
 });
 
-client.login(process.env.DISCORD_TOKEN);
+client.login(process.env.READIT_DISCORD_TOKEN);
