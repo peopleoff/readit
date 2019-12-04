@@ -2,6 +2,10 @@ module.exports = function(sequelize, DataTypes) {
   return sequelize.define(
     "history",
     {
+      successful_post: {
+        type: DataTypes.BOOLEAN,
+        allowNull: true
+      },
       chat_id: {
         type: DataTypes.STRING(250),
         allowNull: true
@@ -20,6 +24,38 @@ module.exports = function(sequelize, DataTypes) {
       },
       command: {
         type: DataTypes.STRING(250),
+        allowNull: true
+      },
+      options: {
+        type: DataTypes.STRING(250),
+        allowNull: true
+      },
+      subreddit: {
+        type: DataTypes.STRING(250),
+        allowNull: true
+      },
+      permalink: {
+        type: DataTypes.STRING(250),
+        allowNull: true
+      },
+      domain: {
+        type: DataTypes.STRING(250),
+        allowNull: true
+      },
+      thumbnail: {
+        type: DataTypes.STRING(250),
+        allowNull: true
+      },
+      over_18: {
+        type: DataTypes.BOOLEAN,
+        allowNull: true
+      },
+      title: {
+        type: DataTypes.TEXT,
+        allowNull: true
+      },
+      post: {
+        type: DataTypes.TEXT,
         allowNull: true
       },
       result: {
