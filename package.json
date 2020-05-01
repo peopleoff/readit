@@ -8,11 +8,14 @@
     "discord.js": "^11.4.2",
     "dotenv": "^8.1.0",
     "mysql2": "^1.7.0",
-    "sequelize": "^5.18.1"
+    "sequelize": "^5.18.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "nodemon readit.js"
+    "start": "nodemon readit.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -23,5 +26,6 @@
   "bugs": {
     "url": "https://github.com/Peopleoff/readit/issues"
   },
-  "homepage": "https://github.com/Peopleoff/readit#readme"
+  "homepage": "https://github.com/Peopleoff/readit#readme",
+  "snyk": true
 }
