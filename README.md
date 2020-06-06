@@ -6,8 +6,6 @@
 
 A Discord bot that will bring reddit into your channel! Let your users share random posts from their favorite subreddits directly into your channel! 
 
-![](https://media.giphy.com/media/mMDEMpBeJuPWIARgTu/giphy.gif)
-
 You can choose to host your own bot or invite mine to your server using the link below
 
 https://discordapp.com/oauth2/authorize?client_id=434377592888623104&scope=bot
@@ -24,7 +22,13 @@ What things you need to install the software and how to install them
 1. Follow the instructions below to create a discord bot and generate an auth token
 https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token
 
-2. Place the auth token into auth.json
+2. Create an .env file with the following values
+    DB_NAME=
+    DB_HOST=
+    DB_USER=
+    DB_PASSWORD=
+    DB_PORT=
+    DISCORD_TOKEN=
 ```
 
 ### Installing

@@ -24,7 +24,6 @@ client.on("message", msg => {
   let channelID = msg.channel.id;
 
   function sendMessage(message, post, successfulPost) {
-    console.log(post);
     let saveObject;
     if (post) {
       saveObject = {
@@ -150,4 +149,4 @@ client.on("message", msg => {
     });
 });
 
-client.login(process.env.READIT_DISCORD_TOKEN);
+client.login(process.env.DISCORD_TOKEN);
