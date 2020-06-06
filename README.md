@@ -6,7 +6,7 @@
 
 A Discord bot that will bring reddit into your channel! Let your users share random posts from their favorite subreddits directly into your channel! 
 
-You can choose to host your own bot or invite mine to your server using the link below
+You can choose to host your own bot or invite mine to your server using the link below 
 
 https://discordapp.com/oauth2/authorize?client_id=434377592888623104&scope=bot
 
