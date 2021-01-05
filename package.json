@@ -4,7 +4,7 @@
   "description": "A simple discord bot that will allow you to share random posts from different subreddits into your channel.",
   "main": "readit.js",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "discord.js": "^11.4.2",
     "dotenv": "^8.1.0",
     "mysql2": "^1.7.0",
